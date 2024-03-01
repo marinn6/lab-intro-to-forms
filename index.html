@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Payment Form</h1>
+        <p>Required fields are marked by *</p>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            Mx.<br>
+            <input type="radio" id="">
+            <br>Mr.<br>
+            <input type="radio" id="">
+            <br>Ms.<br>
+            <input type="radio" id="">
+            <br>Mrs.<br>
+            <input type="radio" id="">
+            <div>    
+                <label for ="name" class='person-form__name-label'>Name</label><br>
+                <input type="text" name='name' id='name' class='person-form__name-input'>
+            </div> 
+
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id='email'>
+            </div>
+        </fieldset>
+<div>
+        <fieldset>
+            <legend>Payment Information</legend>
+
+            <select name="credit_card" id="credit_card" class='credit_card'>
+                    <option value="visa">Visa</option>
+                    <option value="master_card">Master Card</option>
+                    <option value="american_express">AMEX</option>
+            </select>
+            <label for="credit_card">Credit Card Number</label>
+            <div>
+            <input type="text" name="credit-card-number" id="credit-card-number" placeholder="xxxx xxxx xxxx xxxx"></div>
+            <div>
+            <label for="expiration-date">Expiration Date</label>
+            </div>
+            <input type="text" name="credit-card-number" id="credit-card-number"  
+        </fieldset>
+    </div>
+    <input type="submit" class='person-form__submit' value="Submit Payment"> </input>
+    </form>
+</body>
+</html>
