@@ -12,22 +12,38 @@
 
         <fieldset>
             <legend>Contact Information</legend>
-            Mx.<br>
-            <input type="radio" id="">
-            <br>Mr.<br>
-            <input type="radio" id="">
-            <br>Ms.<br>
-            <input type="radio" id="">
-            <br>Mrs.<br>
-            <input type="radio" id="">
+          <label>
+            Mx.
+          <br>
+            <input type="radio" name="honorific" checked>
+        </label>
+          <br>
+          <label>
+            Mr.
+          <br>
+            <input type="radio" name="honorific">
+        </label>
+            <label>
+          <br>
+            Ms.
+          <br>
+            <input type="radio" name="honorific">
+        </label>
+            <label>
+          <br>
+            Mrs.
+          <br>
+            <input type="radio" name="honorific">
+        </label>
             <div>    
-                <label for ="name" class='person-form__name-label'>Name</label><br>
-                <input type="text" name='name' id='name' class='person-form__name-input'>
+                <label for ="name" class='person-form__name-label'>Name</label>
+                <br>
+                <input type="text" name='name' id='name' required>
             </div> 
 
             <div>
                 <label for="email">Email</label><br>
-                <input type="email" name="email" id='email'>
+                <input type="email" name="email" id='email' required>
             </div>
         </fieldset>
 <div>
@@ -36,16 +52,17 @@
 
             <select name="credit_card" id="credit_card" class='credit_card'>
                     <option value="visa">Visa</option>
+                    <option value="discover">Discover</option>
                     <option value="master_card">Master Card</option>
-                    <option value="american_express">AMEX</option>
+                    <option value="american_express">American Express</option>
             </select>
             <label for="credit_card">Credit Card Number</label>
             <div>
-            <input type="text" name="credit-card-number" id="credit-card-number" placeholder="xxxx xxxx xxxx xxxx"></div>
+            <input type="tel" name="credit-card-number" id="credit-card-number" placeholder="xxxx xxxx xxxx xxxx" required></div>
             <div>
             <label for="expiration-date">Expiration Date</label>
             </div>
-            <input type="text" name="credit-card-number" id="credit-card-number"  
+            <input type="text" name="expiration-date" id="expiration-date" required>  
         </fieldset>
     </div>
     <input type="submit" class='person-form__submit' value="Submit Payment"> </input>
